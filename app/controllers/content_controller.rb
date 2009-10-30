@@ -3,7 +3,7 @@ class ContentController < ApplicationController
     if params[:path]
       render :action => params[:path].join('/')
     else
-      render :action => 'index.html'
+      render :action => 'index'
     end
   end
 end
