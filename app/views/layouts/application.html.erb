@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <%= stylesheet_link_tag 'main.css' %>
+    <title>Barona Racetrack Salute to the military</title>
+  </head>
+  
+  <body>
+    <div class="header">
+      <%= link_to image_tag("barona_logo.gif", :border => 0), :root%>
+    </div>
+    <div class="wrapper">
+      <div class="content">
+        <%= yield %>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><%= link_to "Other Flyer", "pdf/Barona\ Race\ Day\ 3.pdf" %></li>
+          <li><a href="/content/pics.html">Pics</a></li>
+          <li><%= link_to "Map to the Dragstrip", "http://www.google.com/maps/ms?ie=UTF8&msa=0&msid=107226581061194334224.0004746e413cf4ef7cd38&ll=32.97238,-116.862431 &spn=0.092744,0.162907&z=13", :target => "_blank"%>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>
